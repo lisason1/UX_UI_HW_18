@@ -63,7 +63,6 @@ a {
 .hero-container img {
   height: 500px;
   width: 375px;
-  margin-left: 100px;
 }
 
 .hero-container h1 {
@@ -358,39 +357,7 @@ footer {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
-
-  @media screen and (max-width: 600px) {
-    .my-skills .skills-container {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .my-skills .skills-container .skill {
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .my-projects .project-container {
-      display: grid;
-      grid-template-areas:
-        "header"
-        "project1"
-        "project2";
-      grid-template-rows: 50px 1fr 1fr;
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
-    }
-  
-    .my-projects .project:nth-child(odd) {
-      grid-area: project1;
-    }
-  
-    .my-projects .project:nth-child(even) {
-      grid-area: project2;
-    }
-  }
+@media only screen and (max-width: 600px){
+  .project{
+      grid-template-columns: 1fr;}
 }
